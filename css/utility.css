@@ -1,0 +1,533 @@
+/* Reset page */
+* {
+  background-color: #272935;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* Reset Link */
+a {
+  text-decoration: none;
+}
+
+/* ----------------------------------------------------- */
+
+/* FLEX  */
+.add-flex {
+  display: flex;
+}
+
+.flexDir-col {
+  flex-direction: column;
+}
+
+.flexDir-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+}
+
+.flex-item {
+  padding: 2.5rem;
+  border: 2px black solid;
+  margin: 0.5rem;
+  color: black;
+  background-color: lightgrey;
+}
+
+/* LOGO */
+.logo {
+  height: 50px;
+  width: 50px;
+  padding: 2rem;
+}
+
+/* BUTTONS */
+/* button hover */
+.button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 1rem;
+}
+
+.fItm-contact {
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 2.5rem;
+  width: 30rem;
+  border: 2px black solid;
+  margin: 0.5rem;
+  color: black;
+  background-color: lightgrey;
+}
+
+.gap-03 {
+  gap: 0.3rem;
+}
+
+/* 2nd Buttons */
+.child {
+  display: inline-flex;
+  width: 8rem;
+  padding: 1.8rem;
+  color: lightgray;
+  cursor: pointer;
+}
+
+.childTr {
+  transition-duration: 0.2s;
+}
+
+.SC-button,
+.SC-button:focus,
+.SC-button:active {
+  display: inline-flex;
+  width: 4rem;
+  height: 1.5rem;
+  background-color: white;
+  color: black;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 4px;
+  transform: translate(2px);
+  font-weight: lighter;
+}
+
+.SC-button:hover {
+  color: white;
+  background-color: gray;
+}
+
+/* Navbar */
+.nav-container {
+  position: fixed;
+  justify-content: space-between;
+  border-bottom: black solid 0.1rem;
+  height: 5rem;
+  width: 100%;
+}
+
+/* Footer */
+.footer-container {
+  position: absolute;
+  border-top: black solid 0.1rem;
+  height: 4rem;
+  background-color: #414558;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 5rem;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  color: white;
+  margin: auto;
+  padding: auto;
+  border: 1px solid black;
+  width: 50rem;
+  height: 24rem;
+}
+
+/* Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ----------------------------------------------- */
+
+/* Margin */
+.m-100 {
+  margin: 100%;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.m-1px {
+  margin: 1px;
+}
+
+.m-1r {
+  margin: 1rem;
+}
+
+.m-2r {
+  margin: 2rem;
+}
+
+.m-4r {
+  margin: 4rem;
+}
+
+/* Margin Left */
+.ml-025 {
+  margin-left: 0.25rem;
+}
+
+.ml-1r {
+  margin-left: 1rem;
+}
+
+.ml-2r {
+  margin-left: 2rem;
+}
+
+.ml-4r {
+  margin-left: 4rem;
+}
+
+.ml-25r {
+  margin-left: 15.5rem;
+}
+
+/* Margin Right */
+.mr-1r {
+  margin-right: 1rem;
+}
+
+.mr-2r {
+  margin-right: 2rem;
+}
+
+.mr-4r {
+  margin-right: 4rem;
+}
+
+.mr-025 {
+  margin-right: 0.25rem;
+}
+
+/* Margin Top */
+.mt-025 {
+  margin-top: 0.25rem;
+}
+
+.mt-1r {
+  margin-top: 1rem;
+}
+
+.mt-2r {
+  margin-top: 2rem;
+}
+
+.mt-4r {
+  margin-top: 4rem;
+}
+
+/* Margin Bottom */
+.mb-2halfr {
+  margin-bottom: 2.5rem;
+}
+
+.mb-4r {
+  margin-bottom: 4rem;
+}
+
+/* Padding */
+.p-100 {
+  padding: 100%;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-1px {
+  padding: 1px;
+}
+
+.p-1r {
+  padding: 1rem;
+}
+
+.p-2r {
+  padding: 2rem;
+}
+
+.p-4r {
+  padding: 4rem;
+}
+
+/* Padding Top */
+.pt-5r {
+  padding-top: 5rem;
+}
+
+/* Padding Bottom */
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pb-1halfr {
+  padding-bottom: 1.5rem;
+}
+
+/* BORDERS */
+/* style */
+.border-solid {
+  border-style: solid;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+.border-dotted {
+  border-style: dotted;
+}
+
+.broder-hidden {
+  border-style: hidden;
+}
+
+.border-none {
+  border-style: none;
+}
+/* placement */
+.border-b {
+  border-bottom: 1px black;
+}
+
+.border-t {
+  border-top: 1px black;
+}
+
+.border-l {
+  border-left: 1px black;
+}
+
+.border-r {
+  border-right: 1px black;
+}
+
+/* Height */
+.h-100 {
+  height: 100%;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.h-1px {
+  height: 1px;
+}
+
+.h-1r {
+  height: 1rem;
+}
+
+.h-2r {
+  height: 2rem;
+}
+
+.h-4r {
+  height: 4rem;
+}
+
+/* Width */
+.w-100 {
+  width: 100%;
+}
+
+.w-0 {
+  width: 0px;
+}
+
+.w-1px {
+  width: 1px;
+}
+
+.w-1r {
+  width: 1rem;
+}
+
+.w-2r {
+  width: 2rem;
+}
+
+.w-4r {
+  width: 4rem;
+}
+
+/* ------------------------------------------------ */
+
+/* Position */
+.pos-static {
+  position: static;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-sticky {
+  position: sticky;
+}
+
+.pos-center {
+  position: center;
+}
+
+/* Justify Content */
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-l {
+  justify-content: left;
+}
+
+.jc-r {
+  justify-content: right;
+}
+
+.jc-sa {
+  justify-content: space-around;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-se {
+  justify-content: space-evenly;
+}
+
+.jc-start {
+  justify-content: start;
+}
+
+.jc-end {
+  justify-content: end;
+}
+
+.jc-fs {
+  justify-content: flex-start;
+}
+
+.jc-fe {
+  justify-content: flex-end;
+}
+
+/* Algin Items */
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-start {
+  align-items: start;
+}
+
+.ai-end {
+  align-items: end;
+}
+
+/* Align Content */
+
+.ac-center {
+  align-content: center;
+}
+
+.ac-start {
+  align-content: start;
+}
+
+.ac-end {
+  align-content: end;
+}
+
+.ac-sa {
+  align-content: space-around;
+}
+
+.ac-sb {
+  align-content: space-between;
+}
+
+.ac-se {
+  align-content: space-evenly;
+}
+
+.ac-fs {
+  align-content: flex-start;
+}
+
+.ac-fe {
+  align-content: flex-end;
+}
+
+/* Align Self */
+
+.as-center {
+  align-self: center;
+}
+
+.as-fs {
+  align-self: flex-start;
+}
+
+.as-fe {
+  align-self: flex-end;
+}
+
+.as-auto {
+  align-self: auto;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.fl-r {
+  float: right;
+}
+
+.fl-l {
+  float: left;
+}
+
+/* FONT SIZES */
+.head-size {
+  font-size: 4rem;
+}
