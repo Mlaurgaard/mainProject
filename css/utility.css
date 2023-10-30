@@ -1,6 +1,6 @@
 /* Reset page */
 * {
-  background-color: #272935;
+  background-color: lightgray;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -279,6 +279,10 @@ a {
 }
 
 /* Padding Top */
+.pt-1r {
+  padding-top: 1rem;
+}
+
 .pt-5r {
   padding-top: 5rem;
 }
