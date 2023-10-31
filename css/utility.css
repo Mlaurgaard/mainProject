@@ -607,7 +607,7 @@ a {
 
 /* MISC */
 .foot-bt {
-  bottom: 0px;
+  margin-top: auto;
 }
 
 .nav-r {
@@ -616,4 +616,10 @@ a {
 
 .nav-l {
   left: 0px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
