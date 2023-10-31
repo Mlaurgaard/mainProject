@@ -19,6 +19,10 @@ a {
   display: flex;
 }
 
+.in-flex {
+  display: inline-flex;
+}
+
 .flexDir-col {
   flex-direction: column;
 }
@@ -29,10 +33,6 @@ a {
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.container {
-  display: flex;
 }
 
 .flex-item {
@@ -73,17 +73,27 @@ a {
   gap: 0.3rem;
 }
 
-/* 2nd Buttons */
-.child {
-  display: inline-flex;
-  width: 8rem;
-  padding: 1.8rem;
-  color: lightgray;
-  cursor: pointer;
+.gap-2r {
+  gap: 2rem;
 }
 
-.childTr {
+.gap-4r {
+  gap: 4rem;
+}
+
+.gap-8r {
+  gap: 8rem;
+}
+
+/* 2nd Buttons */
+.nav-btn,
+.nav-btn:hover {
+  display: inline-flex;
+  font-weight: bolder;
+  cursor: pointer;
   transition-duration: 0.2s;
+  background-color: #797b77;
+  color: #291e00;
 }
 
 .SC-button,
@@ -316,6 +326,16 @@ a {
   padding-bottom: 1.5rem;
 }
 
+/* Padding Left */
+.pl-1r {
+  padding-left: 1rem;
+}
+
+/* Padding Right */
+.pr-1r {
+  padding-right: 1rem;
+}
+
 /* BORDERS */
 /* style */
 .border-solid {
@@ -371,6 +391,10 @@ a {
   height: 1rem;
 }
 
+.h-150r {
+  height: 1.5rem;
+}
+
 .h-2r {
   height: 2rem;
 }
@@ -402,6 +426,14 @@ a {
 
 .w-4r {
   width: 4rem;
+}
+
+.w-8r {
+  width: 8rem;
+}
+
+.w-12r {
+  width: 12rem;
 }
 
 /* ------------------------------------------------ */
@@ -556,4 +588,12 @@ a {
 /* MISC */
 .foot-bt {
   bottom: 0px;
+}
+
+.nav-r {
+  right: 0px;
+}
+
+.nav-l {
+  left: 0px;
 }
