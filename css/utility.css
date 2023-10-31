@@ -373,6 +373,14 @@ a {
 .border-r {
   border-right: 1px black;
 }
+/* shadows */
+.box-shdw {
+  box-shadow: 2px 2px 10px black;
+}
+
+.pic-shdw {
+  box-shadow: 2px 0px 10px black;
+}
 
 /* Height */
 .h-100 {
@@ -403,9 +411,17 @@ a {
   height: 4rem;
 }
 
+.h-32r {
+  height: 32rem;
+}
+
 /* Width */
 .w-100 {
   width: 100%;
+}
+
+.w-50 {
+  width: 50%;
 }
 
 .w-0 {
@@ -434,6 +450,10 @@ a {
 
 .w-12r {
   width: 12rem;
+}
+
+.w-32r {
+  width: 32rem;
 }
 
 /* ------------------------------------------------ */
