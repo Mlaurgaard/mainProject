@@ -5,3 +5,47 @@
 /* Text colors */
 
 /* Buttons */
+
+.clr-1 {
+  color: #e9e7e7;
+}
+
+.clr-2 {
+  color: #7796cb;
+}
+
+.clr-3 {
+  color: #291e00;
+}
+
+.clr-4 {
+  color: #ededed;
+}
+
+.clr-5 {
+  color: #c9cad9;
+}
+
+.bgclr-1 {
+  background-color: #e9e7e7;
+}
+
+.bgclr-2 {
+  background-color: #7796cb;
+}
+
+.bgclr-3 {
+  background-color: #291e00;
+}
+
+.bgclr-4 {
+  background-color: #ededed;
+}
+
+.bgclr-5 {
+  background-color: #77685d;
+}
+
+.bgclr-6 {
+  background-color: #50463f;
+}

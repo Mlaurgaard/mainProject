@@ -1,6 +1,6 @@
 /* Reset page */
 * {
-  background-color: lightgray;
+  background-color: #e9e7e7;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -270,6 +270,14 @@ a {
   padding: 1rem;
 }
 
+.p-125r {
+  padding: 1.25rem;
+}
+
+.p-150r {
+  padding: 1.5rem;
+}
+
 .p-2r {
   padding: 2rem;
 }
@@ -281,6 +289,18 @@ a {
 /* Padding Top */
 .pt-1r {
   padding-top: 1rem;
+}
+
+.pt-2r {
+  padding-top: 2rem;
+}
+
+.pt-3r {
+  padding-top: 3rem;
+}
+
+.pt-4r {
+  padding-top: 4rem;
 }
 
 .pt-5r {
@@ -519,10 +539,7 @@ a {
   align-self: auto;
 }
 
-.wrap {
-  flex-wrap: wrap;
-}
-
+/* FLOAT */
 .fl-r {
   float: right;
 }
@@ -534,4 +551,9 @@ a {
 /* FONT SIZES */
 .head-size {
   font-size: 4rem;
+}
+
+/* MISC */
+.foot-bt {
+  bottom: 0px;
 }
