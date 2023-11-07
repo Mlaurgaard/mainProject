@@ -84,6 +84,12 @@
             document.getElementById("productPrice").textContent = "Price: $" + product.price;
         }
 
+        // Function to display Image IN modal
+        // function insideModalWindow(){
+            // let biggerPicture = document.getElementById("")
+
+        // }
+
         // Function to close the modal
         function toggleProductModal() {
             let modalWindow = document.getElementById("productModal");
