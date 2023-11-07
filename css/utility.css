@@ -238,8 +238,16 @@ a {
 }
 
 /* Margin Top */
+.mt-0 {
+  margin-top: 0;
+}
+
 .mt-025 {
   margin-top: 0.25rem;
+}
+
+.mt-05r {
+  margin-top: 0.5rem;
 }
 
 .mt-1r {
