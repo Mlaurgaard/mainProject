@@ -49,66 +49,91 @@
     <!-- CARDS -->
     <div class="add-flex pt-2r gap-03 jc-center">
       <!-- Card 1 -->
-      <div class="card-container flexDir-col ml-1r shadow cardBorder">
+      <div class="card-container flexDir-col ml-1r shadow cardBorder bgclr-3">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banana-Single.jpg/640px-Banana-Single.jpg"
           alt="Banana"
           class="jc-center"
           style="width: 18rem; height: 12rem"
         />
-        <div class="add-flex flexDir-col cardText m-2">
-          <h3 class="as-center"><u>Product 1</u></h3>
-          <p class="as-center mt-05r">This is a Banan</p>
+        <div class="add-flex flexDir-col cardText m-2 bgclr-3">
+          <h3 class="as-center bgclr-3">
+            <u class="bgclr-3 clr-4">Product 1</u>
+          </h3>
+          <p class="as-center mt-05r bgclr-3 clr-4">This is a Banan</p>
         </div>
       </div>
       <!-- Card 2 -->
       <div class="add-flex">
-        <div class="card-container flexDir-col ml-1r shadow cardBorder">
+        <div
+          class="card-container flexDir-col ml-1r shadow cardBorder bgclr-3"
+          onclick="displayProduct('Apple... Microsoft e ber!')"
+        >
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Honeycrisp-Apple.jpg/1200px-Honeycrisp-Apple.jpg"
             alt="Banana"
             class="jc-center"
             style="width: 18rem; height: 12rem"
           />
-          <div class="add-flex flexDir-col cardText m-2">
-            <h3 class="as-center"><u>Product 2</u></h3>
-            <p class="as-center mt-05r">This is a appel</p>
+          <div class="add-flex flexDir-col cardText m-2 bgclr-3">
+            <h3 class="as-center bgclr-3">
+              <u class="bgclr-3 clr-4">Product 2</u>
+            </h3>
+            <p class="as-center mt-05r bgclr-3 clr-4">This is a appel</p>
           </div>
         </div>
       </div>
       <!-- Card 3 -->
       <div class="add-flex">
-        <div class="card-container flexDir-col ml-1r shadow cardBorder">
+        <div
+          class="card-container flexDir-col ml-1r shadow cardBorder bgclr-3"
+          onclick="displayProduct('Kiwi er best!! ingen protest!')"
+        >
           <img
             src="https://www.bama.no/siteassets/fotoware/2020/10/kiwi-delt.jpg"
             alt="Banana"
             class="jc-center"
             style="width: 18rem; height: 12rem"
           />
-          <div class="add-flex flexDir-col cardText m-2">
-            <h3 class="as-center"><u>Product 3</u></h3>
-            <p class="as-center mt-05r">This is a Kiwee</p>
+          <div class="add-flex flexDir-col cardText m-2 bgclr-3">
+            <h3 class="as-center bgclr-3">
+              <u class="bgclr-3 clr-4">Product 3</u>
+            </h3>
+            <p class="as-center mt-05r bgclr-3 clr-4">This is a Kiwee</p>
           </div>
         </div>
       </div>
       <!-- Card 4 -->
       <div class="add-flex">
-        <div class="card-container flexDir-col ml-1r shadow cardBorder">
+        <div
+          class="card-container flexDir-col ml-1r shadow cardBorder bgclr-3"
+          onclick="toggleProductModal('drue')"
+        >
           <img
             src="https://www.medicalmedium.com/blog-images-optimised/grapes-queen-of-fruits.jpg"
             alt="Banana"
             class="jc-center"
             style="width: 18rem; height: 12rem"
           />
-          <div class="add-flex flexDir-col cardText m-2">
-            <h3 class="as-center"><u>Product 4</u></h3>
-            <p class="as-center mt-05r">This is a grepe</p>
+          <div class="add-flex flexDir-col cardText m-2 bgclr-3">
+            <h3 class="as-center bgclr-3">
+              <u class="bgclr-3 clr-4">Product 4</u>
+            </h3>
+            <p class="as-center mt-05r bgclr-3 clr-4">This is a grepe</p>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Veggie cards -->
+    <div class="add-flex pt-2r gap-03 jc-center mb-4r" id="veggieCards"></div>
+
     <!-- MODAL WINDOW -->
+    <div id="productModalBackground" class="modalBackground hideTheModal"></div>
+    <div id="productModal" class="modalWindowStyling hideTheModal">
+      <h2>I AM MODAL</h2>
+      <button onclick="toggleProductModal()">Close Modal</button>
+    </div>
 
     <!-- CONTENT END -->
     <!-- FOOTER -->
@@ -127,6 +152,7 @@
       </div>
     </footer>
     <!-- FOOTER END -->
-    <script src="./javascript/products.js"></script>
+    <script src="./javascript/codepen.js"></script>
+    <!-- <script src="./javascript/products.js"></script> -->
   </body>
 </html>

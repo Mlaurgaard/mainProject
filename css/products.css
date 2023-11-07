@@ -19,3 +19,25 @@
 }
 
 /* MODAL */
+
+.hideTheModal {
+  display: none;
+}
+
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modalWindowStyling {
+  border: solid 3px black;
+  z-index: 9;
+  width: 50vw;
+  margin: auto;
+  height: 50vh;
+  position: fixed;
+  top: 20vh;
+  left: 25vw;
+}
