@@ -78,8 +78,8 @@
             let modalWindow = document.getElementById("productModal");
             modalWindow.style.display = "block";
 
-            document.getElementById("productName").textContent = product.name;
             document.getElementById("productImage").src = product.image;
+            document.getElementById("productName").textContent = product.name;
             document.getElementById("productDescription").textContent = product.description;
             document.getElementById("productPrice").textContent = "Price: $" + product.price;
         }
