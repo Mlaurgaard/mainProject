@@ -30,6 +30,12 @@ let myProducts = [
         description: "Er ikke en potet",
         price: 10,
     },
+    {
+        name: "mordi",
+        image: "https://www.medicalmedium.com/blog-images-optimised/grapes-queen-of-fruits.jpg",
+        description: "Er ikke en potet",
+        price: 200,
+    },
 ];
 
 function displayMyProducts(){
