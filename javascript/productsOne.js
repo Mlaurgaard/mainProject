@@ -43,20 +43,20 @@
 
             let productName = document.createElement("h2");
             productName.textContent = product.name;
-            productName.classList = "as-center bgclr-3 clr-4 mt-1r"
+            productName.classList = "as-center bgclr-3 clr-4 mt-1r";
             
             let productImage = document.createElement("img");
             productImage.src = product.image;
             productImage.alt = product.name;
-            productImage.style = "height: 12rem; width: 18rem;"
+            productImage.style = "height: 12rem; width: 18rem;";
 
             let productDescription = document.createElement("p");
             productDescription.textContent = product.description;
-            productDescription.classList = "as-center mt-05r bgclr-3 clr-4"
+            productDescription.classList = "as-center mt-05r bgclr-3 clr-4";
 
             let productPrice = document.createElement("p");
             productPrice.textContent = product.price;
-            productPrice.classList = "as-center mt-05r bgclr-3 clr-4"
+            productPrice.classList = "as-center mt-05r bgclr-3 clr-4";
 
 
             card.appendChild(productImage);
