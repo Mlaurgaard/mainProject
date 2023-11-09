@@ -30,12 +30,6 @@ let myProducts = [
         description: "Er ikke en potet",
         price: 10,
     },
-    {
-        name: "mordi",
-        image: "https://www.medicalmedium.com/blog-images-optimised/grapes-queen-of-fruits.jpg",
-        description: "Er ikke en potet",
-        price: 200,
-    },
 ];
 
 function displayMyProducts(){
@@ -66,7 +60,7 @@ function displayMyProducts(){
         productCardElement.className = "card-container flexDir-col ml-1r shadow cardBorder bgclr-3";
         // productCardElement.setAttribute("onclick", `toggleProductModal(${product})`);
         // productCardElement.setAttribute("onclick", `toggleProductModal(${product})`);
-        productCardElement.onclick (`toggleProductModal(${product})`);
+        productCardElement.setAttribute("onclick", `toggleProductModal(${product})`);
         
 
         // Setting up the Product Image
@@ -158,6 +152,3 @@ function toggleProductModal(product){
   // Displays the card that were clicked by populating the modal div
 
 */
-function displayProduct(epicproducts) {
-    console.log(epicproducts);
-}

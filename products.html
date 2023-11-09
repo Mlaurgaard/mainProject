@@ -126,17 +126,18 @@
     </div>
 
     <!-- Veggie cards -->
-    <div class="add-flex pt-2r gap-03 jc-center mb-4r" id="veggieCards"></div>
-
-    <!-- MODAL WINDOW -->
-    <!-- <div id="productModalBackground" class="modalBackground hideTheModal"></div> -->
-    <div id="productModal" class="modalWindowStyling hideTheModal">
-      <div id="productImage"></div>
-      <div id="productName"></div>
-      <div id="productDescription"></div>
-      <div id="productPrice"></div>
-      <button onclick="toggleProductModal()">Close Modal</button>
+    <div class="add-flex pt-2r gap-03 jc-center mb-4r" id="veggieCards">
     </div>
+      <!-- MODAL WINDOW -->
+      <!-- <div id="productModalBackground" class="modalBackground hideTheModal"></div> -->
+      <div id="productModal" class="modalWindowStyling hideTheModal add-flex flexDir-col">
+        <span onclick="toggleProductModal()" class="close">&times;</span>
+        <div id="productName" class="hs-2r as-center bolderFont"></div>
+        <img id="biggerPicture"></img>
+        <div id="productDescription" class="as-center fs-125r"></div>
+        <div id="productPrice" class="as-center mb-2halfr fs-125r"></div>
+
+      </div>
 
     <!-- CONTENT END -->
     <!-- FOOTER -->

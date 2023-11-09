@@ -164,10 +164,11 @@ body {
 
 /* Close Button */
 .close {
-  color: white;
-  float: right;
+  color: black;
   font-size: 2rem;
   font-weight: bold;
+  align-self: end;
+  padding-right: 1rem;
 }
 
 .close:hover,
@@ -618,6 +619,13 @@ body {
   font-size: 4rem;
 }
 
+.hs-2r {
+  font-size: 2rem;
+}
+
+.fs-125r {
+  font-size: 1.25rem;
+}
 /* MISC */
 .foot-bt {
   margin-top: auto;
@@ -629,4 +637,8 @@ body {
 
 .nav-l {
   left: 0px;
+}
+
+.bolderFont {
+  font-weight: bolder;
 }

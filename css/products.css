@@ -36,7 +36,7 @@
   z-index: 9;
   width: 50vw;
   margin: auto;
-  height: 50vh;
+  height: 60vh;
   position: fixed;
   top: 20vh;
   left: 25vw;
@@ -44,4 +44,12 @@
 
 .overflow {
   overflow: visible;
+}
+
+.ImageModal {
+  max-width: 40vw;
+  max-height: 40vh;
+  padding-left: 10vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
