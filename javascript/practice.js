@@ -14,7 +14,7 @@ numArray.forEach(myFunction);
 
 function myFunction (value, index,){
     txt += value;
-    console.log(index,txt)
+    console.log(index,txt,)
 };
 
 

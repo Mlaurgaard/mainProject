@@ -32,10 +32,18 @@
             },
         ];
 
+        // Function to display the product cards
+        function displayMyProducts() {
+            let productWindow = document.getElementById('veggieCards');
+            myProducts.forEach(product => {
+                productWindow.appendChild(createProductCard(product));
+            });
+        }
+
         // Function to create a card for each product
         function createProductCard(product) {
             let card = document.createElement("div");
-            card.className = "card";
+            // card.className = "card";
             card.classList = "add-flex card-container flexDir-col ml-1r shadow cardBorder bgclr-3";
             card.onclick = function () {
                 openProductModal(product);
@@ -66,13 +74,7 @@
             return card;
         }
 
-        // Function to display the product cards
-        function displayMyProducts() {
-            let productWindow = document.getElementById('veggieCards');
-            myProducts.forEach(product => {
-                productWindow.appendChild(createProductCard(product));
-            });
-        }
+     
         
         // Function to display Image IN modal
         function insideModalWindow(productImageSrc){
@@ -84,8 +86,9 @@
         // Function to open the modal and display product details
         function openProductModal(product) {
             let modalWindow = document.getElementById("productModal");
+            let modalBackground = document.getElementById("productModalBackground"); 
             modalWindow.style.display = "flex";
-            
+            modalBackground.classList.remove("hideTheModal")
             
             insideModalWindow(product.image)
             // document.getElementById("productImage").src = product.image;
@@ -101,6 +104,8 @@
         function toggleProductModal() {
             let modalWindow = document.getElementById("productModal");
             modalWindow.style.display = "none";
+            let modalBackground = document.getElementById("productModalBackground");
+            modalBackground.classList.add("hideTheModal");
         }
 
         displayMyProducts();
