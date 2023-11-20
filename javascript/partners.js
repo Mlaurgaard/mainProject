@@ -22,21 +22,57 @@ let myPartners = [
     },
 ];
 
+// Open modal function
+function displayPartnerCards(){
+    let partnerWindow = document.getElementById('');
+    myPartners.forEach(partner =>{
+        partnerWindow.appendChild(createPartnerCard(partner));
+    });
+}
+
+
 // Function that creates Cards in Page
 
-function myPartnerCards(){
-    for(let index = 0; index < myPartners.length; index++){
-        
-        let partners = myPartners[index];
-        let partnersName = myPartners[index].name;
-        let partnersDescription = myPartners[index].description;
-        let partnersEmail = myPartners[index].email;
-        let partnersPhone = myPartners[index].phone;
-        console.log("who is my partners",);
-    }
+function createPartnerCard(partner){
+    let card = document.createElement("div");
+
+    card.classList = "add-flex card-container flexDir-col ml-1r bgclr-3";
+    card.onclick = function(){
+        displayPartnerCards(partner);
+    };
+
+    let partnerName = document.createElement("h2");
+    partnerName.textContent = partner.name;
+    partnerName. classList = "";
+
+    let partnerImage = document.createElement("img");
+    partnerImage.src = partner.image;
+    partnerImage.alt = partner.name;
+    partnerImage.style = "";
+
+    let partnerDescription = document.createElement("p");
+    partnerDescription.textContent = partner.description;
+    partnerDescription.classList = "";
+
+    let partnerEmail = document.createElement("p");
+    partnerEmail.textContent = partner.email;
+    partnerEmail.classList = "";
+
+    let partnerPhone = document.createElement("p");
+    partnerPhone.textContent = partner.phone;
+    partnerPhone.classList = "";
+
+    card.appendChild(partnerImage);
+    card.appendChild(partnerName);
+    card.appendChild(partnerDescription);
+    card.appendChild(partnerEmail);
+    card.appendChild(partnerPhone);
+
+    return card;
+
 };
 
-myPartnerCards()
+// // myPartnerCards()
     // Connect to HTMl div, to push cards
         // Iterate through the objects
             //
