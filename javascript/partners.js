@@ -69,7 +69,6 @@ function createPartnerCard(partner){
     card.appendChild(partnerPhone);
 
     return card;
-
 };
 
 // // myPartnerCards()
