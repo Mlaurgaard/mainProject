@@ -2,6 +2,25 @@
   height: 20rem;
   width: 14rem;
   padding: 0;
+  background-color: #ededed;
+}
+
+.cardButton {
+  width: 3rem;
+  background-color: white;
+  color: black;
+  align-self: flex-end;
+  margin-top: auto;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.cardDescription {
+  overflow: hidden;
+  margin-top: 0.25rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  margin-bottom: auto;
 }
 
 .cardBorder {
