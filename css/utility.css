@@ -227,6 +227,10 @@ body {
 }
 
 /* Margin Right */
+.mr-0 {
+  margin-right: 0;
+}
+
 .mr-1r {
   margin-right: 1rem;
 }
@@ -273,6 +277,10 @@ body {
 }
 
 /* Margin Bottom */
+.mb-1r {
+  margin-bottom: 1rem;
+}
+
 .mb-2halfr {
   margin-bottom: 2.5rem;
 }

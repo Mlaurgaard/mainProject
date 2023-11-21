@@ -62,9 +62,12 @@ function createPartnerCard(partner){
     partnerPhone.textContent = partner.phone;
     partnerPhone.classList = "";
 
-    let infoButton = document.createElement("button");
-    infoButton.textContent = "Open";
-    infoButton.classList = "cardButton";
+    let infoButton = document.createElement("span");
+    infoButton.textContent = ">>>";
+    infoButton.classList = "cardButton bgclr-4 clr-3";
+    infoButton.onclick = function(){
+        openPartnerModal(partner);
+    }
 
     card.appendChild(partnerImage);
     card.appendChild(partnerName);
@@ -78,30 +81,43 @@ function createPartnerCard(partner){
 
 
 
-
-// // myPartnerCards()
-    // Connect to HTMl div, to push cards
-        // Iterate through the objects
-            //
-
-
+function insideModalWindow(partnerImage){
+    let biggerPicture = document.getElementById("partnerImage")
+    biggerPicture.src = partnerImage;
+    biggerPicture.classList = "imageModal";
+}
 
 // Function for opening modal and display partners
 function openPartnerModal(partner){
-    let modalWindow = document.getElementById("");
-    let modalBackground = document.getElementById("");
+    let modalWindow = document.getElementById("partnerModal");
+    let modalBackground = document.getElementById("partnerModalBackground");
     modalWindow.style.display = "flex";
-    modalBackground.classList = ("");
+    modalBackground.classList.remove("hideModal");
 
     // function for picture in modal
+    insideModalWindow(partner.Image)
 
-    document.getElementById("").textContent = partner.name;
-    document.getElementById("").textContent = partner.image;
-    document.getElementById("").textContent = partner.description;
-    document.getElementById("").textContent = partner.phone;
-    document.getElementById("").textContent = partner.email;
+    document.getElementById("partnerName").textContent = partner.name;
+    document.getElementById("partnerImage").src = partner.image;
+    document.getElementById("partnerDescription").textContent = partner.description;
+    document.getElementById("partnerPhone").textContent ="Number: " + partner.phone;
+    document.getElementById("partnerEmail").textContent ="E-mail: " + partner.email;
 }
 
+// Close the modal
+function closePartnerModal(){
+    let modalWindow = document.getElementById("partnerModal");
+    modalWindow.style.display = "none";
+    let modalBackground = document.getElementById("partnerModalBackground");
+    modalBackground.classList.add("hideModal");
+
+}
+
+
+// Hover over button makes card have shadow
+// // function cardHoverShadow(){
+// //     let hoverButton = document.getElementById = ("");
+// // }
 
 displayPartnerCards();
 // Opening modal shows object name, desc, email and phone
