@@ -26,6 +26,7 @@
   color: #c9cad9;
 }
 
+/* BACKGROUND */
 .bgclr-1 {
   background-color: #e9e7e7;
 }
@@ -48,4 +49,8 @@
 
 .bgclr-6 {
   background-color: #50463f;
+}
+
+.bgclr-7 {
+  background-color: teal;
 }

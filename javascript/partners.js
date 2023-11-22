@@ -36,7 +36,7 @@ function displayPartnerCards(){
 function createPartnerCard(partner){
     let card = document.createElement("div");
 
-    card.classList = "add-flex card-container flexDir-col ml-1r bgclr-3 cardBorder";
+    card.classList = "add-flex card-container flexDir-col ml-1r bgclr-7 cardBorder";
     card.onclick = function(){
         // displayPartnerCards(partner);
     };
@@ -64,10 +64,16 @@ function createPartnerCard(partner){
 
     let infoButton = document.createElement("span");
     infoButton.textContent = ">>>";
-    infoButton.classList = "cardButton bgclr-4 clr-3";
+    infoButton.classList = "cardButton bgclr-7 clr-3";
+    infoButton.addEventListener('mouseover', function(){
+        card.classList.add("shadow");
+    });
+    infoButton.addEventListener('mouseout', function(){
+        card.classList.remove("shadow");
+    });
     infoButton.onclick = function(){
         openPartnerModal(partner);
-    }
+    };
 
     card.appendChild(partnerImage);
     card.appendChild(partnerName);
@@ -76,13 +82,15 @@ function createPartnerCard(partner){
     // card.appendChild(partnerEmail);
     // card.appendChild(partnerPhone);
 
+
+
     return card;
 }
 
 
 
 function insideModalWindow(partnerImage){
-    let biggerPicture = document.getElementById("partnerImage")
+    let biggerPicture = document.getElementById("partnerImage");
     biggerPicture.src = partnerImage;
     biggerPicture.classList = "imageModal";
 }
@@ -95,7 +103,7 @@ function openPartnerModal(partner){
     modalBackground.classList.remove("hideModal");
 
     // function for picture in modal
-    insideModalWindow(partner.Image)
+    insideModalWindow(partner.Image);
 
     document.getElementById("partnerName").textContent = partner.name;
     document.getElementById("partnerImage").src = partner.image;
@@ -114,10 +122,6 @@ function closePartnerModal(){
 }
 
 
-// Hover over button makes card have shadow
-// // function cardHoverShadow(){
-// //     let hoverButton = document.getElementById = ("");
-// // }
 
 displayPartnerCards();
 // Opening modal shows object name, desc, email and phone

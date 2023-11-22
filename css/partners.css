@@ -48,7 +48,6 @@
 }
 
 .modalWindowStyling {
-  border: solid 3px black;
   z-index: 9;
   width: 50vw;
   margin: auto;
@@ -67,8 +66,11 @@
 
 .imageModal {
   max-width: 40vw;
-  max-height: 40vh;
+  max-height: 30vh;
   padding-left: 2rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+}
+
+.descriptionModal {
+  padding-top: 2rem;
 }

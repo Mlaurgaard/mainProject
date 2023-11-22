@@ -647,6 +647,10 @@ body {
   margin-top: auto;
 }
 
+.footerHeight-1 {
+  height: 1rem;
+}
+
 .nav-r {
   right: 0px;
 }
