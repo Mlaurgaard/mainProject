@@ -23,9 +23,11 @@ function closeContactModal(){
 const submitMyContactForm = document.getElementById("myContactForm");
 
 submitMyContactForm.addEventListener('submit', function(event){
+    event.preventDefault();
+
     alert("Form submitted successfully");
-    
-    document.getElementById("myContactForm").reset();
+
+    closeContactModal();    
 });
 
 // Clear form
