@@ -36,11 +36,46 @@
         >
       </div>
       <!-- contact -->
-      <div class="bgclr-3 clr-4 nav-btn h-4r w-8r jc-center ai-center">
+      <div
+        class="bgclr-3 clr-4 nav-btn h-4r w-8r jc-center ai-center"
+        onclick="openContactModal();"
+      >
         Contact
       </div>
     </nav>
     <!-- NAVBAR END -->
+    <!-- CONTACT MODAL -->
+    <div id="hideContactModal" class="modalBackground hideModal"></div>
+    <div id="contactModal" class="modalWindowStyling hideModal">
+      <div class="add-flex flexDir-col">
+        <span class="close" onclick="closeContactModal();">&times;</span>
+        <h1 class="as-center hs-2r">Contact Us</h1>
+        <form>
+          <div class="input-container">
+            <label for="name">Name:</label>
+            <input type="text" id="contactName" required />
+          </div>
+          <div class="input-container">
+            <label for="Email">Email:</label>
+            <input type="text" id="contactEmail" required />
+          </div>
+          <div class="input-container">
+            <label for="message">Message:</label>
+            <textarea
+              name="message"
+              id="contactMessage"
+              rows="4"
+              required
+            ></textarea>
+        </form>
+        <div class="add-flex flexDir-row jc-sb">
+        <button id="clear" class=" contactButton">Clear</button>
+        <button id="submit" class="contactButton">Submit</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- CONTACT MODAL END -->
     <!-- CONTENT -->
     <div class="add-flex jc-center pt-1r">
       <h2 class="head-size">Main Project</h2>
@@ -76,6 +111,7 @@
     </footer>
     <!-- FOOTER END -->
 
+    <script src="./javascript/utility.js"></script>
     <script src="./javascript/practice.js"></script>
   </body>
 </html>

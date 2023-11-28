@@ -32,7 +32,6 @@ function displayPartnerCards(){
 
 
 // Function that creates Cards in Page
-
 function createPartnerCard(partner){
     let card = document.createElement("div");
 
@@ -88,7 +87,7 @@ function createPartnerCard(partner){
 }
 
 
-
+// function for picture in modal
 function insideModalWindow(partnerImage){
     let biggerPicture = document.getElementById("partnerImage");
     biggerPicture.src = partnerImage;
@@ -102,7 +101,7 @@ function openPartnerModal(partner){
     modalWindow.style.display = "flex";
     modalBackground.classList.remove("hideModal");
 
-    // function for picture in modal
+    // call function for picture in modal
     insideModalWindow(partner.Image);
 
     document.getElementById("partnerName").textContent = partner.name;
@@ -124,9 +123,6 @@ function closePartnerModal(){
 
 
 displayPartnerCards();
-// Opening modal shows object name, desc, email and phone
-
-// 
 
 
 

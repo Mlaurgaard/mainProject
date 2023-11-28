@@ -141,7 +141,27 @@ body {
 
 /* Modal */
 
-.modal {
+.modalWindowStyling {
+  z-index: 9;
+  height: 45vh;
+  width: 15vw;
+  margin: auto;
+  position: fixed;
+  top: 20vh;
+  left: 43vw;
+}
+
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hideModal {
+  display: none;
+}
+/* .modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -151,16 +171,16 @@ body {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-}
+} */
 
-.modal-content {
+/* .modal-content {
   color: white;
   margin: auto;
   padding: auto;
   border: 1px solid black;
   width: 50rem;
   height: 24rem;
-}
+} */
 
 /* Close Button */
 .close {
@@ -178,6 +198,36 @@ body {
   cursor: pointer;
 }
 
+/* CONTACT FORM */
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  margin: 1rem;
+}
+
+.input-container label {
+  font-size: 1rem;
+}
+
+.input-container input,
+textarea {
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  border: 1px solid #555;
+  resize: none;
+}
+
+.contactButton {
+  margin-top: 0.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
 /* ----------------------------------------------- */
 
 /* Margin */
