@@ -20,6 +20,7 @@ let myPartners = [
         email:"contact@harmonyanalyticsgroup.com",
         phone:"+1 (555) 876-5432",
     },
+    
 ];
 
 //function to display the partner cards
