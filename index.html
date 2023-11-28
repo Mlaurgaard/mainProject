@@ -45,12 +45,18 @@
     </nav>
     <!-- NAVBAR END -->
     <!-- CONTACT MODAL -->
+    <!-- modal background -->
     <div id="hideContactModal" class="modalBackground hideModal"></div>
+    <!-- modal window -->
     <div id="contactModal" class="modalWindowStyling hideModal">
+      <!-- modal content -->
       <div class="add-flex flexDir-col">
+        <!-- close button -->
         <span class="close" onclick="closeContactModal();">&times;</span>
+        <!-- header -->
         <h1 class="as-center hs-2r">Contact Us</h1>
-        <form>
+        <!-- contact form -->
+        <form id="myContactForm">
           <div class="input-container">
             <label for="name">Name:</label>
             <input type="text" id="contactName" required />
@@ -68,9 +74,10 @@
               required
             ></textarea>
         </form>
+        <!-- Submit/Clear buttons -->
         <div class="add-flex flexDir-row jc-sb">
-        <button id="clear" class=" contactButton">Clear</button>
-        <button id="submit" class="contactButton">Submit</button>
+        <button id="clear" class="contactButton" onclick="clearMyform()">Clear</button>
+        <button id="submitMyForm" class="contactButton">Submit</button>
         </div>
       </div>
       </div>

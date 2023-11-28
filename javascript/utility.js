@@ -14,6 +14,21 @@ function closeContactModal(){
     contactModal.style.display = "none";
     let contactBackground = document.getElementById("hideContactModal");
     contactBackground.classList.add("hideModal");
+
+    document.getElementById("myContactForm").reset();
 }
 
-//
+
+// Submit form
+const submitMyContactForm = document.getElementById("myContactForm");
+
+submitMyContactForm.addEventListener('submit', function(event){
+    alert("Form submitted successfully");
+    
+    document.getElementById("myContactForm").reset();
+});
+
+// Clear form
+function clearMyform(){
+    document.getElementById("myContactForm").reset();
+}
