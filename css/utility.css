@@ -193,7 +193,7 @@ body {
 
 .close:hover,
 .close:focus {
-  color: gray;
+  color: #f91100;
   text-decoration: none;
   cursor: pointer;
 }
@@ -411,9 +411,17 @@ textarea {
   padding-left: 1rem;
 }
 
+.pl-25vw {
+  padding-left: 25vw;
+}
+
 /* Padding Right */
 .pr-1r {
   padding-right: 1rem;
+}
+
+.pr-5r {
+  padding-right: 5rem;
 }
 
 /* BORDERS */

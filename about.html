@@ -39,11 +39,49 @@
         >
       </div>
       <!-- contact -->
-      <div class="bgclr-3 clr-4 nav-btn h-4r w-8r jc-center ai-center">
+      <div class="bgclr-3 clr-4 nav-btn h-4r w-8r jc-center ai-center" onclick="openContactModal();">
         Contact
       </div>
     </div>
     <!-- NAVBAR END -->
+    <!-- CONTACT MODAL -->
+    <!-- modal background -->
+    <div id="hideContactModal" class="modalBackground hideModal"></div>
+    <!-- modal window -->
+    <div id="contactModal" class="modalWindowStyling hideModal">
+      <!-- modal content -->
+      <div class="add-flex flexDir-col">
+        <!-- close button -->
+        <span class="close" onclick="closeContactModal();">&times;</span>
+        <!-- header -->
+        <h1 class="as-center hs-2r">Contact Us</h1>
+        <!-- contact form -->
+        <form id="myContactForm">
+          <div class="input-container">
+            <label for="name">Name:</label>
+            <input type="text" id="contactName" required />
+          </div>
+          <div class="input-container">
+            <label for="Email">Email:</label>
+            <input type="text" id="contactEmail" required />
+          </div>
+          <div class="input-container">
+            <label for="message">Message:</label>
+            <textarea
+              name="message"
+              id="contactMessage"
+              rows="4"
+              required
+            ></textarea>
+        </form>
+        <!-- Submit/Clear buttons -->
+        <div class="add-flex flexDir-row jc-sb">
+        <button id="clear" class="contactButton" onclick="clearMyform()">Clear</button>
+        <button id="submitMyForm" class="contactButton">Submit</button>
+        </div>
+      </div>
+      </div>
+    </div>
     <!-- CONTENT -->
     <div class="add-flex jc-center pt-1r">
       <h2 class="head-size">About</h2>
@@ -65,5 +103,7 @@
         <!-- <div class="bgclr-3 clr-4">2023</div> -->
       </div>
     </footer>
+    <script src="./javascript/utility.js"></script>
+    <script src="./javascript/practice.js"></script>
   </body>
 </html>
