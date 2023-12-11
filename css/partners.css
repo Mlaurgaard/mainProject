@@ -49,12 +49,12 @@
 
 .modalWindowStylingTwo {
   z-index: 9;
-  width: 50vw;
+  width: 25vw;
   margin: auto;
   height: 50vh;
   position: fixed;
   top: 20vh;
-  left: 25vw;
+  left: 38vw;
 }
 
 .modalBackground {
@@ -67,10 +67,17 @@
 .imageModal {
   max-width: 40vw;
   max-height: 30vh;
-  padding-left: 2rem;
   padding-top: 2rem;
 }
 
 .descriptionModal {
   padding-top: 2rem;
+}
+
+.modalTextBox {
+  max-width: 15vw;
+  max-height: 30vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  align-self: center;
 }

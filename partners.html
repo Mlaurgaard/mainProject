@@ -88,73 +88,29 @@
     <div class="add-flex jc-center pt-1r">
       <h2 class="head-size">Partners</h2>
     </div>
-    <div class="add-flex pt-2r ml-1r gap-4r jc-center">
-      <!-- CARDS -->
-      <!-- Card 1 -->
-      <div class="card-container shadow cardBorder">
-        <img
-          src="https://www.mrinmaya.io/images/teampic/na.jpg"
-          alt="placeholder"
-          style="height: 12rem; width: 13.7rem"
-        />
-        <div>
-          <h1 class="">InnovateTech Solutions</h1>
-          <p>Description</p>
-          <p>Phone</p>
-          <p>Email</p>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="card-container shadow cardBorder">
-        <img
-          src="https://www.mrinmaya.io/images/teampic/na.jpg"
-          alt="placeholder"
-          style="height: 12rem; width: 13.7rem"
-        />
-        <div>
-          <h1 class="">Celestial Marketing Agency</h1>
-          <p>Description</p>
-          <p>Phone</p>
-          <p>Email</p>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="card-container shadow cardBorder">
-        <img
-          src="https://www.mrinmaya.io/images/teampic/na.jpg"
-          alt="placeholder"
-          style="height: 12rem; width: 13.7rem"
-        />
-        <div>
-          <h1 class="">Harmony Analytics Group</h1>
-          <p>Description</p>
-          <p>Phone</p>
-          <p>Email</p>
-        </div>
-      </div>
-    </div>
-
+    
     <!-- JS CARDS -->
-    <div id="partnerCards" class="add-flex jc-center pt-1r gap-4r"></div>
+    <div id="partnerCards" class="add-flex jc-center pt-2r gap-4r"></div>
     <!-- MODAL CARDS -->
     <div id="partnerModalBackground" class="modalBackground hideModal"></div>
     <div
       id="partnerModal"
       class="modalWindowStylingTwo hideModal add-flex flexDir-col border-solid"
     >
+    <!-- close button -->
       <span onclick="closePartnerModal()" class="close">&times;</span>
+      <!-- headline -->
       <div id="partnerName" class="as-center hs-2r"></div>
+      <!-- image -->
+      <div class="add-flex jc-center">
+      <img id="partnerImage" class="add-flex"></img>
+      </div>
+      <!-- description -->
+      <div id="partnerDescription" class="add-flex modalTextBox"></div>
       
-      <article class="add-flex flexDir-row">
-        <img id="partnerImage" class=""></img>
+      <div id="partnerEmail" class="add-flex jc-center"></div>
+      <div id="partnerPhone" class="add-flex jc-center pt-1r"></div>
       
-        <div id="partnerDescription"></div>
-      </article>
-      <footer class="add-flex flexDir-row foot-bt jc-se bgclr-7 footerHeight-">
-        <div id="partnerEmail" class="mb-1r ml-1r"></div>
-        <div id="partnerPhone" class="mb-1r mr-1r"></div>
-      </footer>
     </div>
     <!-- CONTENT END -->
     <!-- FOOTER -->

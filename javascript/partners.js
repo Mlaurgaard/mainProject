@@ -37,9 +37,7 @@ function createPartnerCard(partner){
     let card = document.createElement("div");
 
     card.classList = "add-flex card-container flexDir-col ml-1r bgclr-7 cardBorder";
-    card.onclick = function(){
-        // displayPartnerCards(partner);
-    };
+    
 
     let partnerName = document.createElement("h2");
     partnerName.textContent = partner.name;
@@ -64,7 +62,8 @@ function createPartnerCard(partner){
 
     let infoButton = document.createElement("span");
     infoButton.textContent = ">>>";
-    infoButton.classList = "cardButton bgclr-7 clr-3";
+    infoButton.classList = "cardButton bgclr-4 clr-3";
+    infoButton.style = "font-weight: bold;"
     infoButton.addEventListener('mouseover', function(){
         card.classList.add("shadow");
     });
@@ -93,6 +92,7 @@ function insideModalWindow(partnerImage){
     let biggerPicture = document.getElementById("partnerImage");
     biggerPicture.src = partnerImage;
     biggerPicture.classList = "imageModal";
+    biggerPicture.style = "width: 15rem; height: 15rem;";
 }
 
 // Function for opening modal and display partners

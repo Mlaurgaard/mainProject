@@ -411,6 +411,10 @@ textarea {
   padding-left: 1rem;
 }
 
+.pl-3r {
+  padding-left: 3rem;
+}
+
 .pl-25vw {
   padding-left: 25vw;
 }
