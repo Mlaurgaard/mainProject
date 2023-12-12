@@ -9,6 +9,7 @@ let myPartners = [
     {
         name: "Celestial Marketing Agency",
         image: "https://www.mrinmaya.io/images/teampic/na.jpg",
+        descriptionTitle: "",
         description:"Digital Marketing Experts, Strategic campaigns for a stellar online presence",
         email:"info@celestialmarketingagency.com",
         phone:"+1 (555) 987-6543",
@@ -31,7 +32,6 @@ function displayPartnerCards(){
     });
 }
 
-
 // Function that creates Cards in Page
 function createPartnerCard(partner){
     let card = document.createElement("div");
@@ -49,9 +49,9 @@ function createPartnerCard(partner){
     partnerImage.style = "height: 12rem; width: 13.7rem;";
 
     let partnerDescription = document.createElement("p");
-    partnerDescription.textContent = partner.description;
     partnerDescription.classList = "cardDescription";
-
+    partnerDescription.textContent = partner.description;
+    
     let partnerEmail = document.createElement("p");
     partnerEmail.textContent = partner.email;
     partnerEmail.classList = "";
@@ -76,10 +76,8 @@ function createPartnerCard(partner){
 
     card.appendChild(partnerImage);
     card.appendChild(partnerName);
-    // card.appendChild(partnerDescription);
     card.appendChild(infoButton);
-    // card.appendChild(partnerEmail);
-    // card.appendChild(partnerPhone);
+    
 
 
 
@@ -87,7 +85,7 @@ function createPartnerCard(partner){
 }
 
 
-// function for picture in modal
+// Function for picture in modal
 function insideModalWindow(partnerImage){
     let biggerPicture = document.getElementById("partnerImage");
     biggerPicture.src = partnerImage;
@@ -108,8 +106,8 @@ function openPartnerModal(partner){
     document.getElementById("partnerName").textContent = partner.name;
     document.getElementById("partnerImage").src = partner.image;
     document.getElementById("partnerDescription").textContent = partner.description;
-    document.getElementById("partnerPhone").textContent ="Number: " + partner.phone;
-    document.getElementById("partnerEmail").textContent ="E-mail: " + partner.email;
+    document.getElementById("partnerPhone").innerHTML = `<p style="font-weight: bold; margin-right: 5px;">Number: </p>` + partner.phone;
+    document.getElementById("partnerEmail").innerHTML = `<p style="font-weight: bold; margin-right: 5px;">E-mail: </p>` + partner.email;
 }
 
 // Close the modal

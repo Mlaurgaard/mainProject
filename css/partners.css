@@ -9,7 +9,6 @@
   width: 3rem;
   align-self: flex-end;
   margin-top: auto;
-  /* margin-right: 0.25rem; */
   margin-bottom: 0.25rem;
 }
 
@@ -41,7 +40,7 @@
   transition: 0.2s;
 }
 
-/* MODAL */
+/* ------- MODAL ------- */
 
 .hideModal {
   display: none;

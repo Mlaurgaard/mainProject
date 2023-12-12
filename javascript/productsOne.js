@@ -43,7 +43,6 @@
         // Function to create a card for each product
         function createProductCard(product) {
             let card = document.createElement("div");
-            // card.className = "card";
             card.classList = "add-flex card-container flexDir-col ml-1r shadow cardBorder bgclr-3";
             card.onclick = function () {
                 openProductModal(product);
@@ -91,7 +90,6 @@
             modalBackground.classList.remove("hideTheModal")
             
             insideModalWindow(product.image)
-            // document.getElementById("productImage").src = product.image;
             document.getElementById("productName").textContent = product.name;
             document.getElementById("productDescription").textContent = product.description;
             document.getElementById("productPrice").textContent = "Price: $" + product.price;

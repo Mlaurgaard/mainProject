@@ -11,15 +11,15 @@
 a {
   text-decoration: none;
 }
-
+/* Positionals (Nav/footer) */
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-/* ----------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
 
-/* FLEX  */
+/* ------- FLEX -------  */
 .add-flex {
   display: flex;
 }
@@ -48,21 +48,6 @@ body {
   background-color: lightgrey;
 }
 
-/* LOGO */
-.logo {
-  height: 50px;
-  width: 50px;
-  padding: 2rem;
-}
-
-/* BUTTONS */
-/* button hover */
-.button:hover {
-  background-color: black;
-  color: white;
-  box-shadow: 1rem;
-}
-
 .fItm-contact {
   flex-direction: column;
   gap: 0.3rem;
@@ -72,6 +57,13 @@ body {
   margin: 0.5rem;
   color: black;
   background-color: lightgrey;
+}
+
+/* ------- LOGO ------- */
+.logo {
+  height: 50px;
+  width: 50px;
+  padding: 2rem;
 }
 
 .gap-03 {
@@ -90,7 +82,13 @@ body {
   gap: 8rem;
 }
 
-/* 2nd Buttons */
+/* ------- BUTTONS ------- */
+.button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 1rem;
+}
+
 .nav-btn,
 .nav-btn:hover {
   display: inline-flex;
@@ -122,7 +120,7 @@ body {
   background-color: gray;
 }
 
-/* Navbar */
+/* ------- Navbar ------- */
 .nav-container {
   position: fixed;
   justify-content: space-between;
@@ -131,7 +129,7 @@ body {
   width: 100%;
 }
 
-/* Footer */
+/* ------- Footer ------- */
 .footer-container {
   position: absolute;
   border-top: black solid 0.1rem;
@@ -139,7 +137,7 @@ body {
   background-color: #414558;
 }
 
-/* Modal */
+/* ------- Modal ------- */
 
 .modalWindowStyling {
   z-index: 9;
@@ -161,28 +159,8 @@ body {
 .hideModal {
   display: none;
 }
-/* .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 5rem;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-} */
 
-/* .modal-content {
-  color: white;
-  margin: auto;
-  padding: auto;
-  border: 1px solid black;
-  width: 50rem;
-  height: 24rem;
-} */
-
-/* Close Button */
+/* ------- Close Button ------- */
 .close {
   color: black;
   font-size: 2rem;
@@ -198,7 +176,7 @@ body {
   cursor: pointer;
 }
 
-/* CONTACT FORM */
+/* ------- CONTACT FORM ------- */
 
 .input-container {
   display: flex;
@@ -228,9 +206,9 @@ textarea {
   color: #fff;
   cursor: pointer;
 }
-/* ----------------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
 
-/* Margin */
+/* ------- Margin ------- */
 .m-100 {
   margin: 100%;
 }
@@ -255,7 +233,7 @@ textarea {
   margin: 4rem;
 }
 
-/* Margin Left */
+/* ------- Margin Left ------- */
 .ml-025 {
   margin-left: 0.25rem;
 }
@@ -276,7 +254,7 @@ textarea {
   margin-left: 15.5rem;
 }
 
-/* Margin Right */
+/* ------- Margin Right ------- */
 .mr-0 {
   margin-right: 0;
 }
@@ -297,7 +275,7 @@ textarea {
   margin-right: 0.25rem;
 }
 
-/* Margin Top */
+/* ------- Margin Top ------- */
 .mt-auto {
   margin-top: auto;
 }
@@ -326,7 +304,7 @@ textarea {
   margin-top: 4rem;
 }
 
-/* Margin Bottom */
+/* ------- Margin Bottom -------- */
 .mb-1r {
   margin-bottom: 1rem;
 }
@@ -339,7 +317,7 @@ textarea {
   margin-bottom: 4rem;
 }
 
-/* Padding */
+/* ------- Padding ------- */
 .p-100 {
   padding: 100%;
 }
@@ -372,7 +350,7 @@ textarea {
   padding: 4rem;
 }
 
-/* Padding Top */
+/* ------- Padding Top ------- */
 .pt-1r {
   padding-top: 1rem;
 }
@@ -393,9 +371,13 @@ textarea {
   padding-top: 5rem;
 }
 
-/* Padding Bottom */
+/* ------- Padding Bottom ------- */
 .pb-0 {
   padding-bottom: 0px;
+}
+
+.pb-1r {
+  padding-bottom: 1rem;
 }
 
 .pb-1halfr {
@@ -406,7 +388,7 @@ textarea {
   padding-bottom: 4rem;
 }
 
-/* Padding Left */
+/* ------- Padding Left ------- */
 .pl-1r {
   padding-left: 1rem;
 }
@@ -419,7 +401,7 @@ textarea {
   padding-left: 25vw;
 }
 
-/* Padding Right */
+/* ------- Padding Right ------- */
 .pr-1r {
   padding-right: 1rem;
 }
@@ -428,7 +410,7 @@ textarea {
   padding-right: 5rem;
 }
 
-/* BORDERS */
+/* ------- BORDERS ------- */
 /* style */
 .border-solid {
   border-style: solid;
@@ -474,7 +456,7 @@ textarea {
   box-shadow: 2px 0px 10px black;
 }
 
-/* Height */
+/* ------- Height ------- */
 .h-100 {
   height: 100%;
 }
@@ -507,7 +489,7 @@ textarea {
   height: 32rem;
 }
 
-/* Width */
+/* ------- Width ------- */
 .w-100 {
   width: 100%;
 }
@@ -548,9 +530,9 @@ textarea {
   width: 32rem;
 }
 
-/* ------------------------------------------------ */
+/* ----------------------------------------------------------------------------------- */
 
-/* Positionals */
+/* ------- Positionals ------- */
 .pos-static {
   position: static;
 }
@@ -575,7 +557,7 @@ textarea {
   position: center;
 }
 
-/* Justify Content */
+/* ------- Justify Content ------- */
 
 .jc-center {
   justify-content: center;
@@ -617,7 +599,7 @@ textarea {
   justify-content: flex-end;
 }
 
-/* Algin Items */
+/* ------- Algin Items ------- */
 
 .ai-center {
   align-items: center;
@@ -631,7 +613,7 @@ textarea {
   align-items: end;
 }
 
-/* Align Content */
+/* ------- Align Content ------- */
 
 .ac-center {
   align-content: center;
@@ -665,7 +647,7 @@ textarea {
   align-content: flex-end;
 }
 
-/* Align Self */
+/* ------- Align Self ------- */
 
 .as-center {
   align-self: center;
@@ -683,7 +665,7 @@ textarea {
   align-self: auto;
 }
 
-/* FLOAT */
+/* ------- FLOAT ------- */
 .fl-r {
   float: right;
 }
@@ -692,7 +674,7 @@ textarea {
   float: left;
 }
 
-/* FONT SIZES */
+/* ------- FONT SIZES ------- */
 .head-size {
   font-size: 4rem;
 }
@@ -704,7 +686,7 @@ textarea {
 .fs-125r {
   font-size: 1.25rem;
 }
-/* MISC */
+/* ------- MISC ------- */
 .foot-bt {
   margin-top: auto;
 }
@@ -724,3 +706,26 @@ textarea {
 .bolderFont {
   font-weight: bolder;
 }
+
+/* ------- UNUSED ------- */
+
+/* .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 5rem;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+} */
+
+/* .modal-content {
+  color: white;
+  margin: auto;
+  padding: auto;
+  border: 1px solid black;
+  width: 50rem;
+  height: 24rem;
+} */

@@ -1,6 +1,6 @@
+/* ------- Contact modal that goes on all pages -------  */
 
-// Contact modal that goes on all pages
-    // OPEN
+// OPEN
 function openContactModal(){
     let contactModal = document.getElementById("contactModal");
     contactModal.style.display = "flex";
@@ -8,7 +8,7 @@ function openContactModal(){
     contactBackground.classList.remove("hideModal");
 }
 
-    //CLOSE
+// CLOSE
 function closeContactModal(){
     let contactModal = document.getElementById("contactModal");
     contactModal.style.display = "none";
@@ -18,8 +18,7 @@ function closeContactModal(){
     document.getElementById("myContactForm").reset();
 }
 
-
-// Submit form
+/* ------- Submit form  ------- */
 const submitMyContactForm = document.getElementById("myContactForm");
 
 submitMyContactForm.addEventListener('submit', function(event){
@@ -30,7 +29,7 @@ submitMyContactForm.addEventListener('submit', function(event){
     closeContactModal();    
 });
 
-// Clear form
+/* ------- Clear form ------- */
 function clearMyform(){
     document.getElementById("myContactForm").reset();
 }
